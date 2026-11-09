@@ -1,0 +1,14 @@
+name = "lumicart-wa-bot"
+main = "src/index.js"
+compatibility_date = "2026-11-09"
+
+[vars]
+# Sesuaikan versi Graph API dengan versi aktif di Meta Developer Dashboard.
+GRAPH_API_VERSION = "v24.0"
+OPENAI_MODEL = "gpt-4.1-mini"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lumicart-db"
+# GANTI dengan ID database sesudah menjalankan: npx wrangler d1 create lumicart-db
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
